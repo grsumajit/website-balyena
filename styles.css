@@ -1,14 +1,41 @@
-/* * {
-    text-align: center;
-} */
+* {
+    font-family: 'Poppins', sans-serif;
+}
 
-#hero {
+.hero {
     position: relative;
-    display: block;
     text-align: center;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.hamburger--spring {
+    display: none;
+}
+
+.title-header {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.title-subheader {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.section-header {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.section-subheader {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.section-text {
+    font-weight: 200;
 }
 
 .wrapper {
@@ -17,11 +44,17 @@
 
 #about {
     position: relative;
-    background: #eee;
+    background: #0583F2;
+    color: #fff;
+}
+
+#about a {
+    color: #fff;
 }
 
 #about-content {
-    padding: 50% 50% 0 10%;
+    position: relative;
+    padding: 25em 0 0 8em;
 }
 
 #projects-content {
@@ -30,19 +63,114 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 0 20% 0 20%
+    padding: 0 20% 0 20%;
 }
 
 #research {
-    background: #eee;
+    position: relative;
+    background: #0583F2;
+    color: #fff;
 }
 
 #research-content {
-    padding: 50% 10% 0 50%;
-    text-align: right;
+    position: relative;
+    padding: 25em 0 0 8em;
 }
 
-#footer-wrapper {
-    height: 30vh;
-    background: #eee;
+#team {
+    position: relative;
+}
+
+#team-content {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#team-content div {
+    margin-top: 3em;
+}
+
+.img-fluid {
+    max-width: 50%;
+    height: 250px;
+}
+
+#support {
+    position: relative;
+    padding: 20em 10em 0 8em;
+}
+
+.footer-wrapper {
+    height: 60vh;
+    background: #343A40;
+    color: #fff;
+    padding: 1em 0 0 3em;
+}
+
+.footer-wrapper div {
+    padding: 3em 1em 0 3em;
+}
+
+.footer-wrapper p {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.footer-wrapper a {
+    color: #fff;
+}
+
+.footer-wrapper a:hover {
+    color: #0583F2;
+}
+
+.footer-wrapper ul {
+    padding: 0;
+    list-style: none;
+    font-weight: 200;
+}
+
+.footer-wrapper li {
+    font-size: 0.8em;
+}
+
+@media only screen and (max-width: 576px) {
+    .hamburger {
+        display: block;
+    }
+
+    #support {
+        position: relative;
+        padding: 0 20% 0 20%;
+    }
+
+    #support-content {
+        position: relative;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+    }
+
+    #research-content {
+        position: relative;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 20% 0 20%;
+    }
+
+    #about-content {
+        position: relative;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 20% 0 20%;
+    }
 }

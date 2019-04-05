@@ -7,12 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+
+    <link href="import/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
     <div class="container-fluid">
         <div class="wrapper" id="header-wrapper">
             <nav class="navbar navbar-expand navbar-light bg-light">
+                <button class="hamburger hamburger--spring is-active" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
                 <a class="navbar-brand" href="#">CompanyName</a>
                 
                 <div class="navbar-collapse">
@@ -24,7 +37,7 @@
                             <a class="nav-link" href="#">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Volunteer</a>
+                            <a class="nav-link" href="#">Research</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Support Us</a>
@@ -32,103 +45,165 @@
                     </ul>
                     
                     <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Enter keyword">
-                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button> -->
+                        <a href="#" role="button"><i class="fas fa-search"></i></a>
                     </form>
                 </div>
-            </nav>
-                      
+            </nav>    
 
-            <div id="hero">
-                <h1 class="header">Lorem Ipsum</h1>
-                <h5 class="subheader">Lorem ipsum dolor sit amet</h5>
+            <div class="hero">
+                <p class="title-header">LOREM IPSUM</p>
+                <p class="title-subheader">Lorem ipsum dolor sit amet</p>
             </div>
         </div>
 
         <div class="wrapper" id="about">
-            <div id="about-content">
-                <h5>ABOUT</h5>
-                <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque excepturi nam laboriosam molestiae qui, explicabo id labore iste magnam harum odit minus sint unde consectetur!</P>
+            <div class="" id="about-content">
+                <div>
+                    <p class="section-header">ABOUT</p>
+                    <p class="section-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque excepturi nam laboriosam molestiae qui, explicabo id labore iste magnam harum odit minus sint unde consectetur!</p>
+                </div>
+                <div>
+                    <button class="btn btn-light" href="#">Learn more <i class="fas fa-angle-double-right"></i></a>
+                </div>
             </div>
         </div>
 
         <div class="wrapper" id="projects">
             <div id="projects-content">
-                <h5>PROJECTS</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam velit iusto vero numquam quis vel! Accusamus facere fugiat quis perferendis laboriosam sequi! Nostrum, enim doloremque?</p>
+                <div>
+                    <p class="section-header">PROJECTS</p>
+                    <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam velit iusto vero numquam quis vel! Accusamus facere fugiat quis perferendis laboriosam sequi! Nostrum, enim doloremque?</p>
+                </div>
+
+                <div>
+                    <button class="btn btn-primary" href="#">Read more <i class="fas fa-angle-double-right"></i></a>
+                </div>
             </div>
         </div>
 
         <div class="wrapper" id="research">
-            <div id="research-content">
-                <h5>RESEARCH</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam velit iusto vero numquam quis vel! Accusamus facere fugiat quis perferendis laboriosam sequi! Nostrum, enim doloremque?</p>
-            </div>
-        </div>
-
-        <div class="carousel" id="team">
-            <h5>THE TEAM</h5>
-            <h5>Name</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In adipisci, dolorum sint unde provident sapiente aliquid aspernatur reiciendis nostrum optio voluptatum recusandae impedit quis consequatur.</p>
-        </div>
-
-        <div id="donate">
-            <h5>DONATE</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In adipisci, dolorum sint unde provident sapiente aliquid aspernatur reiciendis nostrum optio voluptatum recusandae impedit quis consequatur.</p>
-        </div>
-        
-        <!-- <div class="carousel" id="newsfeed-wrapper">
-            <h5>NEWSFEED</h5>
-            <div class="card">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="card-header">
-                            Header
-                        </div>
-                        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, nemo.</div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card-header">
-                            Header
-                        </div>
-                        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, nemo.</div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card-header">
-                            Header
-                        </div>
-                        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, nemo.</div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-        <div id="footer-wrapper">
-            <h5>Footer</h5>
-        </div>
-
-        <!-- <div>
-            <div>
+            <div class="" id="research-content">
                 <div>
-                    <img src="">
+                    <p class="section-header">RESEARCH</p>
+                    <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam velit iusto vero numquam quis vel! Accusamus facere fugiat quis perferendis laboriosam sequi! Nostrum, enim doloremque?</p>
                 </div>
+                    
                 <div>
-                    <img src="">
+                <button class="btn btn-light" href="#"><i class="fas fa-download"></i> Download</a>
                 </div>
             </div>
-            <a class="" href="">
-                <span></span>
-                <span></span>
-            </a>
-            <a class="" href="">
-                <span></span>
-                <span></span>
-            </a>
-        </div> -->
+        </div>
+
+        <div class="wrapper" id="team">
+            <div id="team-content">
+                <div>
+                    <p class="section-header">THE TEAM</p>
+
+                    <div id="team-carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#team-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#team-carousel" data-slide-to="1"></li>
+                            <li data-target="#team-carousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid rounded-circle mx-auto" src="assets/square.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid rounded-circle mx-auto" src="assets/square.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid rounded-circle mx-auto" src="assets/square.jpg">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#team-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#team-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="">
+                    <p class="section-subheader">Lorem, ipsum dolor sit amet consectetur?</p>
+                    <button class="btn btn-primary" href="#">Volunteer <i class="fas fa-hands-helping"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper" id="support">
+            <div id="support-content">
+                <p class="section-header">SUPPORT US</p><br>
+                <a class="section-subheader" href="#">SHOP</a>
+                <p class="section-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, reiciendis.</p><br>
+
+                <a class="section-subheader" href="#">DONATE</a>
+                <p class="section-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, reiciendis.</p>
+            </div>
+        </div>
+
+        <div class="wrapper footer-wrapper row" id="footer-wrapper-desktop">
+            <div class="col-3">
+                <p>COMPANY NAME</p>
+                <ul class="list">
+                    <li class="list-item"><a href="#">About</a></li>
+                    <li class="list-item"><a href="#">Projects</a></li>
+                    <li class="list-item"><a href="#">Research</a></li>
+                    <li class="list-item"><a href="#">Volunteer</a></li>
+                    <li class="list-item"><a href="#">Shop</a></li>
+                    <li class="list-item"><a href="#">Donate</a></li>
+                </ul>
+            </div>
+
+            <div class="col-3">
+                <p>CONTACT US</p>
+                <ul class="list">
+                    <li class="list-item">#123 Sample St.</li>
+                    <li class="list-item">1234 Sample City</li>
+                    <li class="list-item">Sample Province</li>
+                    <li class="list-item">Country</li>
+                </ul>
+            </div>
+
+            <div class="col-3">
+                <p>FOLLOW US</p>
+                <ul class="list">
+                    <a class="pr-2" href="#" name="Facebook"><i class="fab fa-facebook-square"></i></a>
+                    <a class="pr-2" href="#" name="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a class="pr-2" href="#" name="Instagram"><i class="fab fa-instagram"></i></a>
+                </ul>
+            </div>
+
+            <div class="col-12 order-fourth">
+                <p>OUR SPONSORS</p>
+                <ul class="list">
+                    <li class="list-item"><img src="">Company1</li>
+                    <li class="list-item">Company2</li>
+                    <li class="list-item">Company3</li>
+                    <li class="list-item">Company4</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
+    <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function() {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Do something else, like open/close menu
+        });
+    </script>
 
     <script src="script.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
